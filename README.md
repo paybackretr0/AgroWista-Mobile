@@ -1,5 +1,5 @@
 # AgroWista Mobile 
-  AgroWista is an Android application that serves as the mobile version of the AgroVista platform, designed to help users submit reviews and report environmental pollution incidents or maybe vandalism that happen in Desa Wisata Leuwimalang
+  AgroWista is an Android application that serves as the mobile version of the AgroWista platform, designed to help users submit reviews and report environmental pollution incidents or maybe vandalism that happen in Desa Wisata Leuwimalang
   
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
