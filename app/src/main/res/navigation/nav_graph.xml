@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_account"
+        android:name="com.example.agrowista.ui.account.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" >
+        <action
+            android:id="@+id/action_accountFragment_to_loginFragment"
+            app:destination="@id/nav_login"
+            app:popUpTo="@id/nav_home"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_scan"
+        android:name="com.example.agrowista.ui.scan.ScanFragment"
+        android:label="fragment_scan"
+        tools:layout="@layout/fragment_scan">
+        <action
+            android:id="@+id/action_scanFragment_to_cameraFragment"
+            app:destination="@id/nav_camera"
+            app:popUpTo="@id/nav_scan"/>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_chat"
+        android:name="com.example.agrowista.ui.chat.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.agrowista.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_ulasanFragment"
+            app:destination="@id/nav_ulasan"
+            app:popUpTo="@id/nav_home"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.example.agrowista.ui.auth.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/nav_regis" />
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/nav_home"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_regis"
+        android:name="com.example.agrowista.ui.regis.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/nav_login"
+            app:popUpTo="@id/nav_regis"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_ulasan"
+        android:name="com.example.agrowista.ui.ulasan.UlasanFragment"
+        android:label="fragment_ulasan"
+        tools:layout="@layout/fragment_ulasan" >
+        <action
+            android:id="@+id/action_ulasanFragment_to_loginFragment"
+            app:destination="@id/nav_login"
+            app:popUpTo="@id/nav_ulasan"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_camera"
+        android:name="com.example.agrowista.ui.cam.CameraFragment"
+        android:label="fragment_camera"
+        tools:layout="@layout/fragment_camera" />
+    <fragment
+        android:id="@+id/nav_report"
+        android:name="com.example.agrowista.ui.report.ReportFragment"
+        android:label="fragment_report"
+        tools:layout="@layout/fragment_report" >
+        <action
+            android:id="@+id/action_reportFragment_to_loginFragment"
+            app:destination="@id/nav_login"
+            app:popUpTo="@id/nav_report"
+            app:popUpToInclusive="true"/>
+    </fragment>
+</navigation>

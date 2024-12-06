@@ -1,0 +1,6 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.AgroWista" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/ijau</item>
+        <item name="colorSecondary">@color/ijauMuda</item>
+    </style>
+</resources>
